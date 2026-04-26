@@ -7,7 +7,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 env = environ.Env(
     DEBUG=(bool, False),
-    ALLOWED_HOSTS=(list, ['localhost', '127.0.0.1']),
+    ALLOWED_HOSTS = ['*'],
     CORS_ALLOWED_ORIGINS=(list, ['http://localhost:5173'])
 )
 
